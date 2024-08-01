@@ -3,6 +3,6 @@ import tailwind from "@astrojs/tailwind";
 import robotsTxt from "astro-robots-txt";
 
 export default defineConfig({
-  site: "https://jacs626.github.io",
+  site: "https://jacs626.github.io/portfolio.dev/",
   integrations: [tailwind(), robotsTxt()],
 });
