@@ -5,6 +5,9 @@ import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 import ReactJS from "./icons/ReactJS.astro"
+import MongoDB from "./icons/MongoDB.astro";
+import ExpressJS from "./icons/ExpressJS.astro";
+import NodeJS from "./icons/NodeJS.astro";
 
 const TAGS = {
   NEXT: {
@@ -22,16 +25,31 @@ const TAGS = {
     class: "bg-[#191A1B] text-white",
     icon: ReactJS,
   },
+  MONGODB: {
+    name: "MongoDB",
+    class: "bg-[#191A1B] text-white",
+    icon: MongoDB,
+  },
+  EXPRESS: {
+    name: "Express.js",
+    class: "bg-[#d6a938] text-white",
+    icon: ExpressJS,
+  },
+  NODEJS: {
+    name: "Node.js",
+    class: "bg-[#8ebf55] text-white",
+    icon: NodeJS,
+  },
 }
 const PROJECTS = [
   {
     title: "Url.shortner - Acortador de links",
     description:
-      "Acortador de links. Creado con, React y Tailwind CSS.",
+      "Acortador de links. Creado con el stack MERN (MongoDB, Express.js, React.js y Node.js), y Tailwind CSS.",
     link: "https://acortador-de-links-cliente-production.up.railway.app/",
     github: "https://github.com/jacs626/acortador-de-links-cliente",
     image: "/projects/url-shortner.jpg",
-    tags: [TAGS.REACT, TAGS.TAILWIND],
+    tags: [TAGS.MONGODB,TAGS.EXPRESS,TAGS.REACT,TAGS.NODEJS, TAGS.TAILWIND],
   },
   /* {
     title: "AdventJS - Retos de programación con JavaScript y TypeScript",
