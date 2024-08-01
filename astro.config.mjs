@@ -17,6 +17,8 @@ if (isBuild) {
 }
 
 export default defineConfig({
+  server: { port: SERVER_PORT },
   site: BASE_URL,
   integrations: [tailwind(), robotsTxt()],
 });
+console.log(BASE_URL);
